@@ -17,5 +17,6 @@ with open('day1/test_input.txt') as rations:
             ration = sum(calories_sum)
             ration_list.append(ration)
             calories_sum = []
-
+  
+    print (calories_list[-1])
     print(ration_list)
