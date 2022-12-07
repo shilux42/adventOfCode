@@ -9,7 +9,6 @@ def rucksack_splitter(rucksack):
     return(first_compartment, second_compartment)
 
 priorities = []
-in_both_compartment = []
 
 def matching_counter(first_compartment, second_compartment):
  
@@ -33,7 +32,6 @@ def priorities_counter(in_both_compartment):
         priorities.append(item_priorities)
     return priorities
     
-
 with open('day3/input.txt') as rucksacks_list:
     for rucksack in rucksacks_list:
         new_rucksack = rucksack.replace('\n', '')
